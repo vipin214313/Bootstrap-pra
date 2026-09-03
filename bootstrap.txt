@@ -11,6 +11,10 @@ bootstrap is the popular html , css , and javascript faremework for deveoping re
 deveoped by mark otto and Jacob thorton in  name twitter blueprint,
 rename in 2011 bootstrap.
 basic layout of container classes.
+note:-jab kisi element per bootstrap apply ho raha hai to inline style ke thorw koi chnage kar sakte hai 
+
+
+
 ============================================================
 classes name:-
 1- class ="conatiner"
@@ -87,3 +91,27 @@ task 24 working
 
 ================================================25/08/2026===============================================
 
+=============================================01/09/2026==============================================
+1-slider
+2-slider builet
+
+-------------------
+form bootstrap classes:
+1- class="form-control"
+
+button control:
+1. class="btn btn-success"
+2. class="btn btn-danger"
+3. class="btn btn-info"
+4- class="btn btn-warning"
+5- class="btn btn-default"
+
+===================================================02/09/2026===========================================
+jab html5 use karte hai tab conatiner/conatiner-fluid ke under conatiner ya conatiner-fluid call karna compulsary hai
+
+navbar 
+navbar menu
+navbar menu ke under menu
+
+navbarExample2.html==v.important
+icon lana form me
