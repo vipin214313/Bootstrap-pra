@@ -1,0 +1,153 @@
+=====================================19/08/2026=================================================================================
+		BOOTSTRAP
+				
+	=>what is framework?
+	=>what is bootstrap?
+	framework=html+css+js
+			
+	=>framework?
+bootstrap is the popular html , css , and javascript faremework for deveoping respancive and mobile froendlu website 
+==>> BOOTSTRAP is a collection of classes.
+deveoped by mark otto and Jacob thorton in  name twitter blueprint,
+rename in 2011 bootstrap.
+basic layout of container classes.
+note:-jab kisi element per bootstrap apply ho raha hai to inline style ke thorw koi chnage kar sakte hai 
+
+
+
+============================================================
+classes name:-
+1- class ="conatiner"
+2- class="container-fluid"
+Row: BOOTSTRAP rows devided into 12 columns.
+
+device for Bootstrap:
+1-class="col-xl-12" (Extra large device).
+2. class="col-lg-12"(use for large device).
+3-class="col-md-12" (use for medium device).
+4-class="col-sm-12" (use for small device).
+
+note:-row ke ander row nahi hoga but row ke under columns ke under row le sakte but condition ye hai ki 3 ya 3 se jada colum hona chaiye.
+
+basic structure of conatiner class.
+<html>
+<head>
+<link href="link library" rel="styleSheet">
+</head>
+<body>
+<div class="container">
+<div class="row">
+.
+.
+.write css codes
+.
+.</div>
+</div>
+</body>
+</html>
+
+=====================20/08/2026==========================================
+BOOTSTRAP table classes:
+
+1-class="table"
+2- class="table-striped"
+3- class="table-bordered"
+4- class= "table-hover"
+--------------------------------
+Bootstrap image classes:
+1- class=img img-rounded"
+2- class="img img-responsive"
+3- class="img img-thumbnail"
+4-class="img img-fluid"
+5- class="img img-circle"
+
+==========================================21/08/2026==================================
+Hover effect property:
+1. class="hvr-pop"
+2- class="hvr-pulse"
+3. class="hvr-buzz"
+4. class="hvr-float"
+
+bootstrap icon classe:
+1- class="fa fa-facebook"
+2- class="fa fa-user"
+3- class="fa fa-instagram"
+4- class="fa fa-youtube" etc..
+---------------------------
+1- class="glyphicon glyphicon-eye"
+2- class="glyphicon glyphicon-phone"
+3- class="glyphicon glyphicon-trash"
+
+Icofont Icon classes:
+1. class="icofont-user"
+2. class="icofont-phone"
+3. class="icofont-trash"
+4. class="icofont-instagram"
+5. class="icofont-facebook"
+6. class="icofont-pluse"
+
+=====================================================24/08/2026=========================================
+
+task 24 working
+
+================================================25/08/2026===============================================
+
+=============================================01/09/2026==============================================
+1-slider
+2-slider builet
+
+-------------------
+form bootstrap classes:
+1- class="form-control"
+
+button control:
+1. class="btn btn-success"
+2. class="btn btn-danger"
+3. class="btn btn-info"
+4- class="btn btn-warning"
+5- class="btn btn-default"
+
+===================================================02/09/2026===========================================
+jab html5 use karte hai tab conatiner/conatiner-fluid ke under conatiner ya conatiner-fluid call karna compulsary hai
+
+navbar 
+navbar menu
+navbar menu ke under menu
+
+navbarExample2.html==v.important
+icon lana form me
+=================================================03/09/2026===========================================
+allwebsiteDesign.html
+
+================================================04/09/2026============================================
+
+===========================================================07/09/2026=================================
+advance.html
+
+	slide Animation Effect:
+	-----------------------------
+	1. data-aos="slide-left"
+	2. data-aos="slide-right"
+	3. data-aos="slide-up"
+	4. data-aos="slide-down"
+	
+	----------------------------
+	zoom effect:
+	1. data-aos="zoom-in"
+	2. data-aos="zoom-out"
+
+==========================================================08/09/2026============================================
+scrollingExamples.html
+=============================================================09/09/2026========================================
+note= javascript me id banae ke liye data-target="#name" ka use karte hai.
+
+modelExamplesPopOpenav.html 
+adnvncepluAllMIxWebsiteDesign.html
+=========================================================10/10/2026============================================
+navbar me bootsrap advance ke throw menu design karna 
+navarMenuAdvance.html
+  <!--fixed-top =for fixed top menu-->
+  
+=================================================15/09/2026=================================================
+ testimonials examples
+advanceExamples4.html

@@ -1,0 +1,173 @@
+#home1{
+   align-items: center;
+}
+.panel {
+    height: 400px;
+}
+
+.panel-body {
+    height: 340px;
+    overflow-y: auto;
+}
+
+
+/* =========================================
+   NEWS FLASH SECTION
+========================================= */
+
+.news-section {
+    background: #ffffff;
+    padding: 60px 0;
+}
+
+
+/* Main Box */
+
+.news-box {
+    background: #ffffff;
+    min-height: 560px;
+
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.10);
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.news-header {
+    height: 80px;
+
+    background: linear-gradient(
+        120deg,
+        #d99a27,
+        #f0a51c,
+        #d99a27
+    );
+
+    padding: 0 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Title */
+
+.news-title {
+    color: white;
+
+    font-size: 30px;
+
+    font-weight: normal;
+}
+
+
+/* Start Stop Button */
+
+.start-stop-btn {
+    background: #214b9b;
+
+    color: white;
+
+    border: none;
+
+    padding: 7px 10px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.news-content {
+    height: 405px;
+
+    background: white;
+
+    padding: 20px;
+
+    overflow: hidden;
+}
+
+
+.news-content p {
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #333;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.news-footer {
+    height: 75px;
+
+    background: #f5f5f5;
+
+    border-bottom: 5px solid #29498e;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.news-footer a {
+    color: #2384c6;
+
+    text-decoration: none;
+
+    font-size: 20px;
+}
+
+
+.news-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .news-section {
+        padding: 30px 15px;
+    }
+
+    .news-box {
+        margin-bottom: 30px;
+
+        min-height: 450px;
+    }
+
+    .news-header {
+        height: 65px;
+    }
+
+    .news-title {
+        font-size: 24px;
+    }
+
+    .news-content {
+        height: 310px;
+    }
+
+}
