@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   <style>
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+     background: #f5f5f5;
+}
+.container-fluid {
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.header-row {
+    min-height: 100px;
+    margin: 0 !important;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    padding: 5px 10px;
+    text-align: center;
+}
+.header-logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    display: inline-block;
+}
+.university-info {
+    padding-left: 12px;
+    padding-right: 5px;
+}
+.university-info h1 {
+    margin: 0 0 3px 0;
+    color: #39206f;
+    font-family: Georgia, "Times New Roman",serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.university-status {
+    color: #e91e63;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.iso {
+    color: #111;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 3px;
+    line-height: 1.3;
+}
+.header-right {
+    padding: 0 15px;
+    display: flex;
+  align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.naac {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.naac img {
+    width: 105px;
+    height: 75px;
+    object-fit: contain;
+    display: block;
+}
+
+.person {
+    width: 75px;
+    height: 75px;
+    border: 5px solid #e5e5e5;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.person img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ===== About University Page CSS ===== */
+.page-title-section {
+    text-align: center;
+    padding: 30px 15px 15px 15px;
+}
+.page-title-section h2 {
+    color: #d35400;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+.page-title-section .breadcrumb-links {
+    font-size: 15px;
+}
+.page-title-section .breadcrumb-links a {
+    color: #39206f;
+    text-decoration: none;
+    font-weight: 600;
+}
+.page-title-section .breadcrumb-links span.current {
+    color: #333;
+    font-weight: 600;
+}
+.about-wrapper {
+    max-width: 1300px;
+    margin: 0 auto 40px auto;
+    background: #fff;
+    border-top: 3px solid #1a7a5e;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    padding: 30px 25px;
+}
+.about-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+.about-block.reverse {
+    flex-direction: row-reverse;
+}
+.about-block .about-img {
+    flex: 0 0 300px;
+    max-width: 300px;
+}
+.about-block .about-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+}
+.about-block .about-text {
+    flex: 1;
+    min-width: 260px;
+}
+.about-text h3 {
+    color: #d35400;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0 0 6px 0;
+    border-bottom: 3px solid #d35400;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+.about-text p {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-top: 14px;
+    text-align: justify;
+}
+
+@media (max-width: 767px) {
+    .about-block, .about-block.reverse {
+        flex-direction: column;
+    }
+    .about-block .about-img {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+}
+.main-footer {
+    background: #eeeeee;
+    position: relative;
+    padding-top: 55px;
+    color: #111;
+}
+
+.footer-container {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.3fr 1.4fr 1fr 1.1fr 1fr;
+    gap: 45px;
+}
+
+.footer-column h2 {
+    color: #452078;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-top: 45px;
+}
+
+.footer-column p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-column a {
+    display: block;
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-column a:hover {
+    color: #452078;
+}
+
+.feedback-btn {
+    border: none;
+    background: #52227c;
+    color: white;
+    padding: 18px 28px;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-line {
+    width: 190px;
+    border-top: 2px solid #555;
+    margin-bottom: 16px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 7px;
+}
+
+.social-icons a {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 22px;
+}
+
+.facebook {
+    background: #1877f2;
+}
+
+.twitter {
+    background: #111;
+}
+
+.youtube {
+    background: #f00;
+}
+
+.linkedin {
+    background: #0877b5;
+}
+
+.instagram {
+    background: #c32aa3;
+}
+
+.updated {
+    margin-top: 25px;
+    font-size: 13px !important;
+}
+
+.visitors {
+    margin-top: 45px;
+}
+
+.visitors b {
+    background: #222;
+    color: white;
+    padding: 2px 5px;
+}
+
+.footer-bottom {
+    width: 85%;
+    margin: 35px auto 0;
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.footer-bottom span {
+    color: #452078;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+    <div class="row header-row">
+        <!-- LOGO -->
+        <div class="col-sm-1 header-logo">
+            <img src="logo1.png"  alt="University Logo">
+        </div>
+        <!-- UNIVERSITY INFORMATION -->
+        <div class="col-sm-8 university-info">
+            <h1>
+                Veer Bahadur Singh Purvanchal University,
+                Jaunpur, UP, India
+            </h1>
+            <div class="university-status">
+                A State University - Government of Uttar Pradesh
+                Accredited A+ by NAAC
+            </div>
+            <div class="iso">
+                (ISO 9001:2015, ISO 14001:2015 &amp;
+                ISO 50001:2018 certified)
+            </div>
+        </div>
+        <!-- RIGHT HEADER -->
+        <div class="col-sm-3 header-right">
+            <!-- NAAC -->
+            <div class="naac">
+                <img src="naac.jpg"   alt="NAAC">
+            </div>
+
+            <!-- PERSON -->
+            <div class="person">
+                <img src="persion.jpg"  alt="Profile">
+            </div>
+        </div>
+    </div>
+</div>
+<!----===================================About Section ==============================================-->
+<div class="page-title-section">
+    <h2>About University</h2>
+    <div class="breadcrumb-links">
+        <a href="index.html">Home</a> &nbsp;|&nbsp;
+        <a href="university.html">University</a> &nbsp;|&nbsp;
+        <span class="current">About University</span>
+    </div>
+</div>
+
+<div class="about-wrapper">
+
+    <!-- Block 1: Founder -->
+    <div class="about-block">
+        <div class="about-img">
+            <img src="vbspu1.jpg" alt="Lt. Shri Veer Bahadur Singh Ji">
+        </div>
+        <div class="about-text">
+            <h3>Lt. Shri Veer Bahadur Singh Ji</h3>
+            <p>
+                Purvanchal University, Jaunpur renamed as Veer Bahadur Singh Purvanchal University
+                (in the honour of late Shri Veer Bahadur Singh, former Chief Minister of the state),
+                was established on 2nd October 1987 as an affiliating university under U.P. state
+                university act 1973. Continuous qualitative and quantitative growth, excellence in
+                academic and administrative activities, transparent and efficient academic
+                administration have been some of the distinct characteristics on the basis of which
+                the university emerged as one of the leading university of the country. Started with
+                the 68 affiliated colleges, the university now has widened it's spectrum of activities
+                with 589 affiliated graduate and post-graduate colleges and students enrolment of
+                nearly three lacs and four hundred seventy-six in 2 Districts of Eastern Uttar Pradesh.
+            </p>
+        </div>
+    </div>
+
+    <!-- Block 2: University Gate -->
+    <div class="about-block reverse">
+        <div class="about-img">
+            <img src="gate.jpeg" alt="University Gate">
+        </div>
+        <div class="about-text">
+            <h3>University Gate</h3>
+            <p>
+                The university is located at 10 km from the historic city of Jaunpur on
+                Jaunpur-Shahganj road which divides it's 171.5 acres campus into two. Jaunpur is well
+                connected by Train, Road and Air with rest of the country. The infrastructure
+                development, achievement of academic excellence, quality assurance in the higher
+                education and socio-economic development of this highly backward &amp; rural region of
+                Eastern Uttar Pradesh are some of the priority areas for which the university is
+                putting its best efforts. The beginning of two-year full-time residential MBA course
+                in 1990 was one of the first steps towards making change in the character of the
+                university from affiliating to affiliating cum-residential university.
+            </p>
+        </div>
+    </div>
+
+    <!-- Block 3: Gandhi Vatika -->
+    <div class="about-block">
+        <div class="about-img">
+            <img src="gandhi.jpg" alt="Gandhi Vatika">
+        </div>
+        <div class="about-text">
+            <h3>Gandhi Vatika</h3>
+            <p>
+                The dearth of technical and professional educational facilities and growing demand for
+                need based courses in the region have been the guiding factors that have led the
+                university on the path of continuous academic growth with the beginning of 16 more
+                residential courses in the various streams including Engineering &amp; Technology
+                (B.Tech.), Modern and Applied Sciences (MBT), Management (Finance &amp; Control, HRD),
+                Business Economics, Pharmacy (B.Pharmacy) and Applied Social Sciences (MAP, Mass
+                communication) in mere 15 years since it's inception.
+            </p>
+        </div>
+    </div>
+
+    <!-- Block 4: Future Plans -->
+    <div class="about-block reverse">
+        <div class="about-img">
+            <img src="vc.png" alt="Future Plans">
+        </div>
+        <div class="about-text">
+            <h3>Future Plans</h3>
+            <p>
+                The University also plans to start courses in Medical Sciences, Library &amp;
+                Information Sciences, B.Tech [Biotech] in near future, which would certainly prove to
+                be a mile-stone in the multidirectional academic expansion of the university. The
+                inclusion of university in the 12(B) of the UGC and its accreditation by NAAC in the
+                year 2001 and 2004 respectively, have been pivotal in moving the university in list of
+                prominent centers of higher learning on national higher education map. These
+                developments proved to be instrumental in the academic expansion of the university,
+                especially in promoting the quality teaching and research.
+            </p>
+        </div>
+    </div>
+
+    <!-- Block 5: Extension Activities -->
+    <div class="about-block">
+        <div class="about-img">
+            <img src="bu.png" alt="Extension Activities">
+        </div>
+        <div class="about-text">
+            <h3>Extension Activities</h3>
+            <p>
+                Apart from it's regular teaching, research and extension activities, the university
+                has always discharged it's social responsibilities also. Financial assistance to the
+                relatives of Kargil Martyrs, regular support to the victims of natural disasters
+                including the recent financial assistance of Rs. 51 Lakhs to Tsunami victims are some
+                of the examples that make us a socially responsive organization. Recently the
+                university has organised Bapu Bazar especially for socially backward people in which
+                used clothes were sold on nominal rates (2, 5 Rupees). In terms of infrastructure
+                development too, the university has made a tremendous growth as is quite evident from
+                it's well developed fully residential campus, consisting of all the modern
+                infrastructural support system required for an effective higher teaching-learning.
+            </p>
+        </div>
+    </div>
+<footer class="main-footer">
+
+    <div class="footer-container">
+
+        <!-- LEFT -->
+        <div class="footer-column feedback-column">
+
+            <button class="feedback-btn">
+                ♡ &nbsp; Your Feedback
+            </button>
+
+            <h3>Connect with Us</h3>
+
+            <div class="footer-line"></div>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/Vbspuofficial?mibextid=ZbWKwL" class="facebook">f</a>
+                <a href="https://x.com/vbspu_official" class="twitter">X</a>
+                <a href="https://www.youtube.com/c/VBSPurvanchalUniversityJaunpurUttarPradesh" class="youtube">▶</a>
+                <a href="https://www.linkedin.com/company/veer-bahadur-singh-purvanchal-university-jaunpur-official" class="linkedin">in</a>
+                <a href="https://www.instagram.com/vbspu.jaunpur/" class="instagram">◎</a>
+            </div>
+
+            <p class="updated">
+                Last Updated On : 16 September 2026 22:19
+            </p>
+
+            <p class="visitors">
+                Visitors : <b>35542829</b>
+            </p>
+
+        </div>
+
+
+        <!-- ADDRESS -->
+        <div class="footer-column">
+
+            <h2>Address</h2>
+
+            <p>
+                📍 &nbsp;
+                <b>
+                    RMJJ+7PR, Shahganj Road, Siddikpur,
+                    Uttar Pradesh - 222003
+                </b>
+            </p>
+
+            <p>
+                📱 &nbsp;
+                <b>05452 252 244</b>
+            </p>
+
+            <p>
+                🌐 &nbsp;
+                <b>www.vbspu.ac.in</b>
+            </p>
+
+        </div>
+
+
+        <!-- POLICIES -->
+        <div class="footer-column">
+
+            <h2>Policies</h2>
+
+            <a href="#">Hyperlinking Policy</a>
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#">Copyright Statement</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Disclaimer</a>
+            <a href="#">Accessibility Statement</a>
+            <a href="#">Help</a>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+        <div class="footer-column">
+
+            <h2>Quick Links</h2>
+
+            <a href="#">Photo Gallery</a>
+            <a href="#">Press Release</a>
+            <a href="#">IGNOU</a>
+            <a href="#">Affiliated Colleges</a>
+            <a href="#">Tenders</a>
+            <a href="#">Downloads</a>
+            <a href="#">Court Cases</a>
+            <a href="#">Prerna Coaching</a>
+
+        </div>
+
+
+        <!-- CONTACT -->
+        <div class="footer-column">
+
+            <h2>Contact</h2>
+
+            <a href="#">Officials Details</a>
+            <a href="#">How to Reach</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- BOTTOM FOOTER -->
+
+    <div class="footer-bottom">
+
+        <p>
+            This is the official Website of Veer Bahadur Singh
+            Purvanchal University, Jaunpur, UP, India.
+        </p>
+
+        <p>
+            Content on this website is published and managed by
+            Veer Bahadur Singh Purvanchal University, Jaunpur, UP, India.
+        </p>
+
+        <p>
+            For any query regarding this website, Please contact the
+            <span>"Web Information Manager"</span>.
+        </p>
+
+    </div>
+
+</footer>
+    <script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/counterup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

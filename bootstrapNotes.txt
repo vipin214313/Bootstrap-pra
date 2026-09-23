@@ -151,3 +151,28 @@ navarMenuAdvance.html
 =================================================15/09/2026=================================================
  testimonials examples
 advanceExamples4.html
+==================================================16/09/2026==================================================
+apply counter
+counter2.html
+====================================18/09/2026============================================================
+	Fade Effect:
+	------------------
+	1-  data-aos="fade-left"
+	2- data-aos="fade-right"
+	3- data-aos="fade-up"
+	4- data-aos="fade-down"
+	
+	Delay time set:-
+	-----------------------------
+	1-  data-aos-delay="....."
+	
+	Flip Effect:-
+	1- data-aos="flip-left"
+	2- data-aos="flip-right"
+	3- data-aos="flip-up"
+	4- data-aos="flip-down"
+ advance7.html
+ 
+ ========================================================21/09/2026===================================
+ textbigandsmall.html
+ overExamples.html

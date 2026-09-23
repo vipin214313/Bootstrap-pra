@@ -1,0 +1,488 @@
+/* ===================== COMMON ===================== */
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #222;
+    padding-top: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 400;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.divider {
+    width: 370px;
+    max-width: 100%;
+    height: 2px;
+    background: #b8963e;
+    margin: 30px auto 0;
+}
+
+.purple-divider {
+    background: #9b59b6;
+}
+
+.gold-text {
+    color: #b8963e;
+    font-size: 24px;
+}
+
+.purple-text {
+    color: #6a3d9a;
+    font-size: 22px;
+}
+
+.round-img {
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+
+/* ===================== NAVBAR ===================== */
+
+.melodia-nav {
+    background: transparent;
+    border: none;
+}
+
+.melodia-nav .logo {
+    color: #c157d6;
+    font-size: 32px;
+    font-weight: 600;
+    height: 70px;
+    line-height: 30px;
+}
+
+.melodia-nav .navbar-nav > li > a {
+    color: #fff;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.melodia-nav .navbar-nav > li > a:hover {
+    background: transparent;
+    color: #c157d6;
+}
+
+.melodia-nav .call-btn {
+    background: #8e5cb5;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 25px !important;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+
+/* ===================== HERO ===================== */
+
+.hero-slider {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    background: #1a1a1a;
+}
+
+.hero-slider .carousel-inner,
+.hero-slider .item {
+    height: 100%;
+}
+
+.hero-slider .item {
+    background-size: cover;
+    background-position: center;
+    background-color: #222;
+}
+
+/* dark layer taaki text saaf dikhe */
+.hero-slider .item:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 200px;
+    color: #fff;
+    z-index: 5;
+}
+
+.hero-slider .carousel-control {
+    z-index: 6;
+    width: 70px;
+    background: none;
+    opacity: 0.8;
+}
+
+.hero-slider .carousel-control .glyphicon {
+    top: 50%;
+    font-size: 40px;
+    margin-top: -20px;
+}
+
+.hero-small {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 65px;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+.hero-rating {
+    margin: 40px 0 25px;
+    overflow: hidden;
+}
+
+.rating-images,
+.rating-text {
+    float: left;
+}
+
+.rating-images img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-right: -15px;
+    background: #999;
+}
+
+.rating-text {
+    margin-left: 40px;
+}
+
+.stars {
+    color: #f5a623;
+    font-size: 20px;
+}
+
+.whatsapp-btn {
+    background: #0dbf3c;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 35px;
+    font-size: 16px;
+}
+
+
+/* ===================== STATS + VIDEO ===================== */
+
+.stats-section {
+    padding: 70px 0;
+}
+
+.stats-section h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.stats-section p {
+    color: #555;
+    margin-bottom: 30px;
+}
+.video-box {
+    position: relative;
+    margin-top: 40px;
+    height: 0;
+    padding-bottom: 56.25%;   /* 16:9 size */
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* ===================== ISO SECTION ===================== */
+
+.iso-section {
+    background: #fff5eb;
+    padding: 80px 0;
+}
+
+.iso-img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.iso-section h2 {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.iso-section p {
+    text-align: justify;
+}
+
+
+/* ===================== DESTINATION ===================== */
+
+.destination-section {
+    padding: 80px 0;
+}
+
+.dark-box {
+    background: #3d3d3d;
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.dark-box h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.dark-box p {
+    text-align: justify;
+    font-size: 17px;
+}
+
+.purple-btn {
+    background: linear-gradient(to right, #b07cc6, #7b4a9c);
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin-right: 10px;
+}
+
+.green-btn {
+    background: #0dbf3c;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+
+/* ===================== SERVICES ===================== */
+
+.services-section {
+    background: #fff5eb;
+    padding: 70px 0;
+}
+
+.services-section h2 {
+    font-size: 38px;
+}
+
+.services-section p {
+    text-align: justify;
+}
+
+.service-box {
+    position: relative;
+    margin-top: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #999;
+}
+
+.service-box img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.service-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.service-text h4 {
+    margin: 0 0 5px;
+}
+
+.service-text p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* ===================== TESTIMONIALS ===================== */
+
+.testimonial-section {
+    padding: 80px 0;
+}
+
+.testimonial-section h2 {
+    font-size: 38px;
+}
+
+.review-box {
+    margin-top: 40px;
+    padding: 20px;
+    min-height: 210px;
+    text-align: left;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.reviewer {
+    margin-top: 15px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.avatar {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    font-size: 22px;
+    float: left;
+    margin-right: 15px;
+}
+
+
+/* ===================== FOOTER ===================== */
+
+.main-footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("images/footer.jpg") center/cover;
+    background-color: #111;
+    color: #fff;
+    padding: 50px 0 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.footer-logo {
+    font-size: 45px;
+    margin: 20px 0;
+}
+
+.footer-about p {
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 700px;
+    margin: 0 auto 10px;
+}
+
+.footer-links {
+    margin-top: 40px;
+}
+
+.footer-links h4 {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    display: block;
+    color: #fff;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.footer-links p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.footer-contact {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+    margin: 30px 0 20px;
+}
+
+.footer-contact span {
+    margin: 0 20px;
+}
+
+.footer-bottom {
+    font-size: 13px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: #25d366;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    font-size: 28px;
+    z-index: 999;
+    text-decoration: none;
+}
+
+
+/* ===================== RESPONSIVE ===================== */
+
+@media (max-width: 767px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content {
+        padding-top: 120px;
+    }
+
+    .melodia-nav {
+        background: #222;
+    }
+
+    .stats-section h2 {
+        font-size: 40px;
+    }
+
+    .iso-section h2,
+    .services-section h2,
+    .testimonial-section h2 {
+        font-size: 26px;
+    }
+
+    .footer-bottom .text-right {
+        text-align: left;
+    }
+}

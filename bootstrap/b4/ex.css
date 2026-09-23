@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+.banner{
+    width:100%;
+    min-height:500px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position: relative;
+    padding: 30px;
+}   
+.content-box{
+    width:490px;
+    min-height: 305px;
+    background-color:rgb(187,0,0,0.5);
+    padding:40px 60px;
+    border-radius:4px;
+    position:absolute;
+    z-index: 1;
+    margin-right:-100px;
+}
+.image-box{
+    width:600px;
+    height: 435px;
+    overflow:hidden;
+}
+@media (max-width:600px){
+.banner{
+flex-direction: column;
+padding: 30px 20px;
+}
+.content-box{
+    width: 83%;
+    margin-right: 0;
+    margin-bottom: -20px;
+}
+.image-box{
+    width: 90%;
+    height: 350px;
+}
+}

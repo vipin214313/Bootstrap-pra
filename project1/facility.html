@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities | Veer Bahadur Singh Purvanchal University</title>
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   <style>
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+     background: #f5f5f5;
+}
+.container-fluid {
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.header-row {
+    min-height: 100px;
+    margin: 0 !important;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    padding: 5px 10px;
+    text-align: center;
+}
+.header-logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    display: inline-block;
+}
+.university-info {
+    padding-left: 12px;
+    padding-right: 5px;
+}
+.university-info h1 {
+    margin: 0 0 3px 0;
+    color: #39206f;
+    font-family: Georgia, "Times New Roman",serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.university-status {
+    color: #e91e63;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.iso {
+    color: #111;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 3px;
+    line-height: 1.3;
+}
+.header-right {
+    padding: 0 15px;
+    display: flex;
+  align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.naac {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.naac img {
+    width: 105px;
+    height: 75px;
+    object-fit: contain;
+    display: block;
+}
+
+.person {
+    width: 75px;
+    height: 75px;
+    border: 5px solid #e5e5e5;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.person img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ===== Page title (same as About/Faculty/Contact pages) ===== */
+.page-title-section {
+    text-align: center;
+    padding: 30px 15px 15px 15px;
+}
+.page-title-section h2 {
+    color: #d35400;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+.page-title-section .breadcrumb-links {
+    font-size: 15px;
+}
+.page-title-section .breadcrumb-links a {
+    color: #39206f;
+    text-decoration: none;
+    font-weight: 600;
+}
+.page-title-section .breadcrumb-links span.current {
+    color: #333;
+    font-weight: 600;
+}
+
+/* ===== Facility page ===== */
+.facility-wrapper {
+    max-width: 1300px;
+    margin: 0 auto 40px auto;
+    background: #fff;
+    border-top: 3px solid #1a7a5e;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    padding: 30px 25px;
+}
+
+.facility-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    color: #333;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.facility-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.facility-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 26px 20px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.facility-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-color: transparent;
+}
+
+.facility-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 16px auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1a7a5e, #39206f);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.facility-card h3 {
+    color: #d35400;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.facility-card p {
+    color: #444;
+    font-size: 13.5px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .facility-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .facility-grid {
+        grid-template-columns: 1fr;
+    }
+    .page-title-section h2 {
+        font-size: 24px;
+    }
+}
+
+/* FOOTER */
+.main-footer {
+    background: #eeeeee;
+    position: relative;
+    padding-top: 55px;
+    color: #111;
+}
+
+.footer-container {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.3fr 1.4fr 1fr 1.1fr 1fr;
+    gap: 45px;
+}
+
+.footer-column h2 {
+    color: #452078;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-top: 45px;
+}
+
+.footer-column p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-column a {
+    display: block;
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-column a:hover {
+    color: #452078;
+}
+
+.feedback-btn {
+    border: none;
+    background: #52227c;
+    color: white;
+    padding: 18px 28px;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-line {
+    width: 190px;
+    border-top: 2px solid #555;
+    margin-bottom: 16px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 7px;
+}
+
+.social-icons a {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 22px;
+}
+
+.facebook { background: #1877f2; }
+.twitter { background: #111; }
+.youtube { background: #f00; }
+.linkedin { background: #0877b5; }
+.instagram { background: #c32aa3; }
+
+.updated {
+    margin-top: 25px;
+    font-size: 13px !important;
+}
+
+.visitors {
+    margin-top: 45px;
+}
+
+.visitors b {
+    background: #222;
+    color: white;
+    padding: 2px 5px;
+}
+
+.footer-bottom {
+    width: 85%;
+    margin: 35px auto 0;
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.footer-bottom span {
+    color: #452078;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+    <div class="row header-row">
+        <!-- LOGO -->
+        <div class="col-sm-1 header-logo">
+            <img src="logo1.png"  alt="University Logo">
+        </div>
+        <!-- UNIVERSITY INFORMATION -->
+        <div class="col-sm-8 university-info">
+            <h1>
+                Veer Bahadur Singh Purvanchal University,
+                Jaunpur, UP, India
+            </h1>
+            <div class="university-status">
+                A State University - Government of Uttar Pradesh
+                Accredited A+ by NAAC
+            </div>
+            <div class="iso">
+                (ISO 9001:2015, ISO 14001:2015 &amp;
+                ISO 50001:2018 certified)
+            </div>
+        </div>
+        <!-- RIGHT HEADER -->
+        <div class="col-sm-3 header-right">
+            <!-- NAAC -->
+            <div class="naac">
+                <img src="naac.jpg"   alt="NAAC">
+            </div>
+
+            <!-- PERSON -->
+            <div class="person">
+                <img src="persion.jpg"  alt="Profile">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----===================================Facility Section ==============================================-->
+<div class="page-title-section">
+    <h2>Our Facilities</h2>
+    <div class="breadcrumb-links">
+        <a href="index.html">Home</a> &nbsp;|&nbsp;
+        <span class="current">Facility</span>
+    </div>
+</div>
+
+<div class="facility-wrapper">
+
+    <p class="facility-intro">
+        Veer Bahadur Singh Purvanchal University provides a wide range of academic and
+        residential facilities to ensure a comfortable and enriching experience for
+        every student on campus.
+    </p>
+
+    <div class="facility-grid">
+
+        <div class="facility-card">
+            <div class="facility-icon">📚</div>
+            <h3>Central Library</h3>
+            <p>A well-stocked library with thousands of books, journals, and digital resources for research and academics.</p>
+        </div>
+
+        <div class="facility-card">
+            <div class="facility-icon">🏠</div>
+            <h3>Hostel</h3>
+            <p>Separate residential hostels for boys and girls with mess, security, and 24x7 warden supervision.</p>
+        </div>
+
+        <div class="facility-card">
+            <div class="facility-icon">🧪</div>
+            <h3>Laboratories</h3>
+            <p>Modern, well-equipped science, computer, and engineering labs for practical and research work.</p>
+        </div>
+
+        <div class="facility-card">
+            <div class="facility-icon">🏟️</div>
+            <h3>Sports Complex</h3>
+            <p>Facilities for cricket, football, basketball, athletics, and indoor games to promote sports culture.</p>
+        </div>
+
+        <div class="facility-card">
+            <div class="facility-icon">📶</div>
+            <h3>Wi-Fi Campus</h3>
+            <p>High-speed internet connectivity across the campus for students, faculty, and research scholars.</p>
+        </div>
+
+        <div class="facility-card">
+            <div class="facility-icon">🚌</div>
+            <h3>Transport</h3>
+            <p>University bus service connecting the campus to Jaunpur city and nearby areas.</p>
+        </div>
+
+        <div class="facility-card">
+            <div class="facility-icon">🏥</div>
+            <h3>Health Centre</h3>
+            <p>On-campus medical facility with a qualified doctor and first-aid support for students and staff.</p>
+        </div>
+
+        <div class="facility-card">
+            <div class="facility-icon">🍽️</div>
+            <h3>Canteen</h3>
+            <p>Hygienic canteen and cafeteria offering affordable and quality food throughout the day.</p>
+        </div>
+
+        <div class="facility-card">
+            <div class="facility-icon">🏦</div>
+            <h3>Bank &amp; ATM</h3>
+            <p>On-campus bank branch and ATM facility for convenient banking access to students and staff.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- ================================= FOOTER ================================= -->
+<footer class="main-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-column feedback-column">
+
+            <button class="feedback-btn">
+                ♡ &nbsp; Your Feedback
+            </button>
+
+            <h3>Connect with Us</h3>
+
+            <div class="footer-line"></div>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/Vbspuofficial?mibextid=ZbWKwL" class="facebook">f</a>
+                <a href="https://x.com/vbspu_official" class="twitter">X</a>
+                <a href="https://www.youtube.com/c/VBSPurvanchalUniversityJaunpurUttarPradesh" class="youtube">▶</a>
+                <a href="https://www.linkedin.com/company/veer-bahadur-singh-purvanchal-university-jaunpur-official" class="linkedin">in</a>
+                <a href="https://www.instagram.com/vbspu.jaunpur/" class="instagram">◎</a>
+            </div>
+
+            <p class="updated">
+                Last Updated On : 16 September 2026 22:19
+            </p>
+
+            <p class="visitors">
+                Visitors : <b>35542829</b>
+            </p>
+
+        </div>
+
+        <div class="footer-column">
+            <h2>Address</h2>
+            <p>
+                📍 &nbsp;
+                <b>
+                    RMJJ+7PR, Shahganj Road, Siddikpur,
+                    Uttar Pradesh - 222003
+                </b>
+            </p>
+            <p>
+                📱 &nbsp;
+                <b>05452 252 244</b>
+            </p>
+            <p>
+                🌐 &nbsp;
+                <b>www.vbspu.ac.in</b>
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h2>Policies</h2>
+            <a href="#">Hyperlinking Policy</a>
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#">Copyright Statement</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Disclaimer</a>
+            <a href="#">Accessibility Statement</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="footer-column">
+            <h2>Quick Links</h2>
+            <a href="#">Photo Gallery</a>
+            <a href="#">Press Release</a>
+            <a href="#">IGNOU</a>
+            <a href="#">Affiliated Colleges</a>
+            <a href="#">Tenders</a>
+            <a href="#">Downloads</a>
+            <a href="#">Court Cases</a>
+            <a href="#">Prerna Coaching</a>
+        </div>
+
+        <div class="footer-column">
+            <h2>Contact</h2>
+            <a href="#">Officials Details</a>
+            <a href="#">How to Reach</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            This is the official Website of Veer Bahadur Singh
+            Purvanchal University, Jaunpur, UP, India.
+        </p>
+        <p>
+            Content on this website is published and managed by
+            Veer Bahadur Singh Purvanchal University, Jaunpur, UP, India.
+        </p>
+        <p>
+            For any query regarding this website, Please contact the
+            <span>"Web Information Manager"</span>.
+        </p>
+    </div>
+
+</footer>
+    <script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/counterup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

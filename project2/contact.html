@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link rel="stylesheet" href="css/style.css">
+<style>
+/* ===================== COMMON ===================== */
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #222;
+    padding-top: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 400;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.divider {
+    width: 370px;
+    max-width: 100%;
+    height: 2px;
+    background: #b8963e;
+    margin: 30px auto 0;
+}
+
+.purple-divider {
+    background: #9b59b6;
+}
+
+.gold-text {
+    color: #b8963e;
+    font-size: 24px;
+}
+
+.purple-text {
+    color: #6a3d9a;
+    font-size: 22px;
+}
+
+.round-img {
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+
+/* ===================== NAVBAR ===================== */
+
+.melodia-nav {
+    background: transparent;
+    border: none;
+}
+
+.melodia-nav .logo {
+    color: #c157d6;
+    font-size: 32px;
+    font-weight: 600;
+    height: 70px;
+    line-height: 30px;
+}
+
+.melodia-nav .navbar-nav > li > a {
+    color: #fff;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.melodia-nav .navbar-nav > li > a:hover {
+    background: transparent;
+    color: #c157d6;
+}
+
+.melodia-nav .call-btn {
+    background: #8e5cb5;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 25px !important;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+
+/* ===================== HERO ===================== */
+
+.hero-slider {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    background: #1a1a1a;
+}
+
+.hero-slider .carousel-inner,
+.hero-slider .item {
+    height: 100%;
+}
+
+.hero-slider .item {
+    background-size: cover;
+    background-position: center;
+    background-color: #222;
+}
+
+/* dark layer taaki text saaf dikhe */
+.hero-slider .item:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 200px;
+    color: #fff;
+    z-index: 5;
+}
+
+.hero-slider .carousel-control {
+    z-index: 6;
+    width: 70px;
+    background: none;
+    opacity: 0.8;
+}
+
+.hero-slider .carousel-control .glyphicon {
+    top: 50%;
+    font-size: 40px;
+    margin-top: -20px;
+}
+
+.hero-small {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 65px;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+.hero-rating {
+    margin: 40px 0 25px;
+    overflow: hidden;
+}
+
+.rating-images,
+.rating-text {
+    float: left;
+}
+
+.rating-images img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-right: -15px;
+    background: #999;
+}
+
+.rating-text {
+    margin-left: 40px;
+}
+
+.stars {
+    color: #f5a623;
+    font-size: 20px;
+}
+
+.whatsapp-btn {
+    background: #0dbf3c;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 35px;
+    font-size: 16px;
+}
+
+
+/* ===================== STATS + VIDEO ===================== */
+
+.stats-section {
+    padding: 70px 0;
+}
+
+.stats-section h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.stats-section p {
+    color: #555;
+    margin-bottom: 30px;
+}
+.video-box {
+    position: relative;
+    margin-top: 40px;
+    height: 0;
+    padding-bottom: 56.25%;   /* 16:9 size */
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* ===================== ISO SECTION ===================== */
+
+.iso-section {
+    background: #fff5eb;
+    padding: 80px 0;
+}
+
+.iso-img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.iso-section h2 {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.iso-section p {
+    text-align: justify;
+}
+
+
+/* ===================== DESTINATION ===================== */
+
+.destination-section {
+    padding: 80px 0;
+}
+
+.dark-box {
+    background: #3d3d3d;
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.dark-box h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.dark-box p {
+    text-align: justify;
+    font-size: 17px;
+}
+
+.purple-btn {
+    background: linear-gradient(to right, #b07cc6, #7b4a9c);
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin-right: 10px;
+}
+
+.green-btn {
+    background: #0dbf3c;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+
+/* ===================== SERVICES ===================== */
+
+.services-section {
+    background: #fff5eb;
+    padding: 70px 0;
+}
+
+.services-section h2 {
+    font-size: 38px;
+}
+
+.services-section p {
+    text-align: justify;
+}
+
+.service-box {
+    position: relative;
+    margin-top: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #999;
+}
+
+.service-box img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.service-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.service-text h4 {
+    margin: 0 0 5px;
+}
+
+.service-text p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* ===================== TESTIMONIALS ===================== */
+
+.testimonial-section {
+    padding: 80px 0;
+}
+
+.testimonial-section h2 {
+    font-size: 38px;
+}
+
+.review-box {
+    margin-top: 40px;
+    padding: 20px;
+    min-height: 210px;
+    text-align: left;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.reviewer {
+    margin-top: 15px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.avatar {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    font-size: 22px;
+    float: left;
+    margin-right: 15px;
+}
+
+
+/* ===================== FOOTER ===================== */
+
+.main-footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("images/footer.jpg") center/cover;
+    background-color: #111;
+    color: #fff;
+    padding: 50px 0 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.footer-logo {
+    font-size: 45px;
+    margin: 20px 0;
+}
+
+.footer-about p {
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 700px;
+    margin: 0 auto 10px;
+}
+
+.footer-links {
+    margin-top: 40px;
+}
+
+.footer-links h4 {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    display: block;
+    color: #fff;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.footer-links p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.footer-contact {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+    margin: 30px 0 20px;
+}
+
+.footer-contact span {
+    margin: 0 20px;
+}
+
+.footer-bottom {
+    font-size: 13px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: #25d366;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    font-size: 28px;
+    z-index: 999;
+    text-decoration: none;
+}
+
+
+/* ===================== RESPONSIVE ===================== */
+
+@media (max-width: 767px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content {
+        padding-top: 120px;
+    }
+
+    .melodia-nav {
+        background: #222;
+    }
+
+    .stats-section h2 {
+        font-size: 40px;
+    }
+
+    .iso-section h2,
+    .services-section h2,
+    .testimonial-section h2 {
+        font-size: 26px;
+    }
+
+    .footer-bottom .text-right {
+        text-align: left;
+    }
+}
+
+
+/* ===================== SIMPLE SECTION TITLE (used on inner pages) ===================== */
+
+.section-title {
+    text-align: center;
+    padding: 60px 20px 10px;
+}
+
+.section-title h2 {
+    margin-top: 10px;
+}
+
+
+/* ===================== FORM CARD (Contact / Book Events / Login) ===================== */
+
+.form-card {
+    background: #fff;
+    padding: 35px 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    max-width: 640px;
+    margin: 0 auto 40px;
+}
+
+.form-card label {
+    font-weight: 600;
+    color: #6a3d9a;
+    font-size: 13px;
+}
+
+.form-card .form-control {
+    border-radius: 8px;
+    box-shadow: none;
+    border: 1px solid #ddd;
+    height: 42px;
+}
+
+textarea.form-control {
+    height: auto;
+}
+
+.form-card .form-control:focus {
+    border-color: #c157d6;
+    box-shadow: none;
+}
+
+.btn-melodia {
+    background: linear-gradient(to right, #b07cc6, #7b4a9c);
+    color: #fff;
+    padding: 10px 32px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+}
+
+.btn-melodia:hover {
+    background: linear-gradient(to right, #9b59b6, #6a3d9a);
+    color: #fff;
+}
+
+.contact-info-box {
+    background: #fff5eb;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info-box p {
+    margin-bottom: 14px;
+    color: #555;
+    font-size: 15px;
+}
+
+.contact-info-box strong {
+    color: #6a3d9a;
+}
+
+
+/* ===================== PICTURE GALLERY ===================== */
+
+.gallery-section {
+    padding: 60px 0;
+}
+
+.gallery-item {
+    margin-bottom: 25px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.06);
+}
+
+
+/* ===================== VIDEO GALLERY (autoplay carousel) ===================== */
+
+.video-gallery-section {
+    padding: 60px 0;
+}
+
+.video-slider {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background: #000;
+}
+
+.video-slider .item {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 */
+    background: #000;
+}
+
+.video-slider video,
+.video-slider iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    object-fit: cover;
+}
+
+.video-slider .video-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 18px;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    font-size: 15px;
+    z-index: 2;
+}
+
+.video-slider .carousel-indicators {
+    bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top melodia-nav">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo" href="index.html">Melodia</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="book-events.html">Book Events</a></li>
+                <li><a href="picture-gallery.html">Picture Gallery</a></li>
+                <li><a href="video-gallery.html">Videos Gallery</a></li>
+                <li><a href="index.html#review">Review</a></li>
+                <li><a href="index.html#services">Service</a></li>
+                <li><a href="login.html" class="call-btn">Login</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<div id="heroSlider" class="carousel slide hero-slider" data-ride="carousel" data-interval="3000">
+
+    <div class="carousel-inner">
+        <div class="item active" style="background-image: url('image1.jpg');"></div>
+        <div class="item" style="background-image: url('images2.jpg');"></div>
+        <div class="item" style="background-image: url('images3.jpg');"></div>
+        <div class="item" style="background-image: url('images4.jpg');"></div>
+    </div>
+
+    <div class="container-fluid hero-content">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-1 hero-text">
+
+                <p class="hero-small">ONLINE EVENT BOOKING, MADE SIMPLE</p>
+
+                <h1>Plan, Book and Manage Your Event with Melodia</h1>
+
+                <div class="hero-rating">
+                    <div class="rating-images">
+                        <img src="image1.jpg" alt="Client 1">
+                        <img src="images2.jpg" alt="Client 2">
+                        <img src="images3.jpg" alt="Client 3">
+                    </div>
+                    <div class="rating-text">
+                        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>
+                        <b>4.7/5 Rating</b>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/919876543210" class="btn btn-success btn-lg whatsapp-btn">Whatsapp Us</a>
+
+            </div>
+        </div>
+    </div>
+
+    <a class="left carousel-control" href="#heroSlider" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+
+    <a class="right carousel-control" href="#heroSlider" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+
+</div>
+
+<div class="section-title">
+    <h4 class="purple-text">GET IN TOUCH</h4>
+    <h2>Contact Us</h2>
+    <div class="divider"></div>
+</div>
+
+<div class="container" style="padding-bottom:60px;">
+    <div class="row">
+        <div class="col-sm-7">
+            <div class="form-card">
+                <form>
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" class="form-control" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="you@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel" class="form-control" placeholder="+91 98765 43210">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea class="form-control" rows="5" placeholder="How can we help?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-melodia">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-5">
+            <div class="contact-info-box">
+                <p><strong>Address</strong><br>Melodia Events, MG Road, Lucknow, Uttar Pradesh 226001</p>
+                <p><strong>Phone</strong><br>+91-98765-43210</p>
+                <p><strong>Email</strong><br>support@melodiaevents.com</p>
+                <p><strong>Office Hours</strong><br>Mon &ndash; Sat, 10:00 AM to 7:00 PM</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="main-footer" id="contact">
+    <div class="container">
+
+        <div class="social-icons text-center">
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+        </div>
+
+        <div class="footer-about text-center">
+            <h2 class="footer-logo">Melodia</h2>
+            <p><b>Melodia Events &mdash; Online Event Booking Platform</b></p>
+            <p>
+                Melodia Events helps you plan and book corporate events, weddings, private parties
+                and more, all from one simple online platform. Browse services, submit your event
+                details, and our team confirms your booking directly on the platform.
+            </p>
+        </div>
+
+        <div class="row footer-links">
+
+            <div class="col-sm-2">
+                <h4>QUICK LINKS</h4>
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="picture-gallery.html">Photo Gallery</a>
+                <a href="video-gallery.html">Video Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="col-sm-3">
+                <h4>SERVICES</h4>
+                <a href="book-events.html">Corporate Events</a>
+                <a href="book-events.html">Wedding Planner</a>
+                <a href="book-events.html">Music &amp; Entertainment</a>
+                <a href="book-events.html">Private Parties</a>
+                <a href="book-events.html">Exhibitions</a>
+                <a href="book-events.html">Virtual Events</a>
+            </div>
+
+            <div class="col-sm-3">
+                <h4>OTHER LINKS</h4>
+                <a href="#">Blog</a>
+                <a href="#">Testimonials</a>
+                <a href="#">Careers</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Sitemap</a>
+            </div>
+
+            <div class="col-sm-4">
+                <h4>CONTACT INFO</h4>
+                <p>&#9906; Melodia Events, MG Road, Lucknow, Uttar Pradesh 226001</p>
+                <p>&#9906; support@melodiaevents.com</p>
+                <p>&#9906; +91-98765-43210</p>
+            </div>
+
+        </div>
+
+        <div class="footer-contact text-center">
+            <span>&#9990; +91-98765-43210</span>
+            <span>&#9993; support@melodiaevents.com</span>
+        </div>
+
+        <div class="row footer-bottom">
+            <div class="col-sm-6">
+                &copy; 2026 Melodia Events. All Rights Reserved.
+            </div>
+            <div class="col-sm-6 text-right">
+                Powered by <b>Melodia Events</b>
+            </div>
+        </div>
+
+    </div>
+</footer>
+    <script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/counterup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

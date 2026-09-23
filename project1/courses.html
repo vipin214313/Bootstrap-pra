@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+     background: #f5f5f5;
+}
+.container-fluid {
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.header-row {
+    min-height: 100px;
+    margin: 0 !important;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    padding: 5px 10px;
+    text-align: center;
+}
+.header-logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    display: inline-block;
+}
+.university-info {
+    padding-left: 12px;
+    padding-right: 5px;
+}
+.university-info h1 {
+    margin: 0 0 3px 0;
+    color: #39206f;
+    font-family: Georgia, "Times New Roman",serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.university-status {
+    color: #e91e63;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.iso {
+    color: #111;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 3px;
+    line-height: 1.3;
+}
+.header-right {
+    padding: 0 15px;
+    display: flex;
+  align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.naac {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.naac img {
+    width: 105px;
+    height: 75px;
+    object-fit: contain;
+    display: block;
+}
+
+.person {
+    width: 75px;
+    height: 75px;
+    border: 5px solid #e5e5e5;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.person img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ===== Page Title / Breadcrumb ===== */
+.page-title-section {
+    text-align: center;
+    padding: 30px 15px 15px 15px;
+}
+.page-title-section h2 {
+    color: #d35400;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+.page-title-section .breadcrumb-links {
+    font-size: 15px;
+}
+.page-title-section .breadcrumb-links a {
+    color: #39206f;
+    text-decoration: none;
+    font-weight: 600;
+}
+.page-title-section .breadcrumb-links span.current {
+    color: #333;
+    font-weight: 600;
+}
+
+/* ===== Courses Page CSS ===== */
+.courses-wrapper {
+    max-width: 1300px;
+    margin: 0 auto 40px auto;
+    background: #fff;
+    border-top: 3px solid #1a7a5e;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    padding: 30px 25px;
+}
+.courses-intro {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.faculty-block {
+    margin-bottom: 32px;
+}
+.faculty-block h3 {
+    color: #fff;
+    background: #39206f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 19px;
+    margin: 0 0 16px 0;
+    padding: 10px 18px;
+    border-left: 5px solid #d35400;
+    border-radius: 3px;
+}
+.course-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.course-tags span {
+    display: inline-block;
+    background: #f9f1ea;
+    color: #39206f;
+    border: 1px solid #e8d9c8;
+    border-radius: 4px;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.course-tags span::before {
+    content: "\f00c";
+    font-family: "icofont";
+    color: #1a7a5e;
+    margin-right: 6px;
+}
+
+@media (max-width: 600px) {
+    .course-tags {
+        flex-direction: column;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+    <div class="row header-row">
+        <!-- LOGO -->
+        <div class="col-sm-1 header-logo">
+            <img src="logo1.png"  alt="University Logo">
+        </div>
+        <!-- UNIVERSITY INFORMATION -->
+        <div class="col-sm-8 university-info">
+            <h1>
+                Veer Bahadur Singh Purvanchal University,
+                Jaunpur, UP, India
+            </h1>
+            <div class="university-status">
+                A State University - Government of Uttar Pradesh
+                Accredited A+ by NAAC
+            </div>
+            <div class="iso">
+                (ISO 9001:2015, ISO 14001:2015 &amp;
+                ISO 50001:2018 certified)
+            </div>
+        </div>
+        <!-- RIGHT HEADER -->
+        <div class="col-sm-3 header-right">
+            <!-- NAAC -->
+            <div class="naac">
+                <img src="naac.jpg"   alt="NAAC">
+            </div>
+
+            <!-- PERSON -->
+            <div class="person">
+                <img src="persion.jpg"  alt="Profile">
+            </div>
+        </div>
+    </div>
+</div>
+<!----===================================Courses Section ==============================================-->
+
+<div class="page-title-section">
+    <h2>Courses</h2>
+    <div class="breadcrumb-links">
+        <a href="index.html">Home</a> &nbsp;|&nbsp;
+        <a href="university.html">University</a> &nbsp;|&nbsp;
+        <span class="current">Courses</span>
+    </div>
+</div>
+
+<div class="courses-wrapper">
+
+    <p class="courses-intro">
+        Veer Bahadur Singh Purvanchal University, Jaunpur offers a wide range of Undergraduate,
+        Postgraduate and Diploma programmes across its faculties, spread over Engineering &amp;
+        Technology, Science, Arts, Commerce, Education, Law, Agriculture, Medicine and Management
+        streams. Below is a faculty-wise list of departments and courses offered by the university.
+    </p>
+
+    <!-- Faculty of Engineering & Technology -->
+    <div class="faculty-block">
+        <h3>Faculty of Engineering &amp; Technology</h3>
+        <div class="course-tags">
+            <span>B.Tech - Computer Science &amp; Engineering</span>
+            <span>B.Tech - Electronics &amp; Communication Engineering</span>
+            <span>B.Tech - Electrical Engineering</span>
+            <span>B.Tech - Mechanical Engineering</span>
+            <span>Department of Applied Sciences</span>
+        </div>
+    </div>
+
+    <!-- Faculty of Science -->
+    <div class="faculty-block">
+        <h3>Faculty of Science</h3>
+        <div class="course-tags">
+            <span>B.Sc. / M.Sc. Physics</span>
+            <span>B.Sc. / M.Sc. Chemistry</span>
+            <span>B.Sc. Mathematics</span>
+            <span>Botany (UG &amp; PG)</span>
+            <span>Zoology (UG)</span>
+            <span>Computer Science</span>
+            <span>Home Science</span>
+            <span>Military Science (UG &amp; PG)</span>
+            <span>Food and Nutrition</span>
+            <span>Industrial Fishery &amp; Fisheries</span>
+            <span>Industrial Chemistry</span>
+            <span>Silk and Worm Culture</span>
+            <span>Physical Education, Health Education &amp; Sports</span>
+            <span>Environmental Science</span>
+            <span>Applied Microbiology</span>
+            <span>Applied Biochemistry</span>
+        </div>
+    </div>
+
+    <!-- Faculty of Arts -->
+    <div class="faculty-block">
+        <h3>Faculty of Arts</h3>
+        <div class="course-tags">
+            <span>Sanskrit &amp; Prakrit (UG &amp; PG)</span>
+            <span>Hindi &amp; Modern Indian Language</span>
+            <span>Arbi, Farsi and Urdu</span>
+            <span>English &amp; Modern European Language (UG &amp; PG)</span>
+            <span>Philosophy</span>
+            <span>Psychology (UG &amp; PG)</span>
+            <span>Economics (UG &amp; PG)</span>
+            <span>Education (UG &amp; PG)</span>
+            <span>Political Science (UG &amp; PG)</span>
+            <span>History (PG)</span>
+            <span>Anthropology</span>
+            <span>Ancient History, Archeology &amp; Culture</span>
+            <span>Medieval &amp; Modern History</span>
+            <span>Social Science</span>
+            <span>Geography</span>
+            <span>Sociology (UG &amp; PG)</span>
+            <span>Art &amp; Music (UG)</span>
+            <span>Library Science</span>
+            <span>Social Work</span>
+        </div>
+    </div>
+
+    <!-- Faculty of Commerce -->
+    <div class="faculty-block">
+        <h3>Faculty of Commerce</h3>
+        <div class="course-tags">
+            <span>B.Com. (UG)</span>
+            <span>M.Com. (PG)</span>
+        </div>
+    </div>
+
+    <!-- Faculty of Education -->
+    <div class="faculty-block">
+        <h3>Faculty of Education</h3>
+        <div class="course-tags">
+            <span>B.Ed.</span>
+            <span>M.Ed.</span>
+            <span>Psychology</span>
+            <span>Fine Arts</span>
+        </div>
+    </div>
+
+    <!-- Faculty of Law -->
+    <div class="faculty-block">
+        <h3>Faculty of Law</h3>
+        <div class="course-tags">
+            <span>LL.B.</span>
+        </div>
+    </div>
+
+    <!-- Faculty of Agriculture -->
+    <div class="faculty-block">
+        <h3>Faculty of Agriculture</h3>
+        <div class="course-tags">
+            <span>B.Sc. Agriculture</span>
+            <span>Agriculture Botany</span>
+            <span>Agriculture Chemistry</span>
+            <span>Agriculture Zoology &amp; Entomology</span>
+            <span>Agriculture Economics</span>
+            <span>Agriculture Extension</span>
+            <span>M.Sc. Ag - Agronomy</span>
+            <span>M.Sc. Ag - Horticulture</span>
+            <span>M.Sc. Ag - Plant Pathology</span>
+            <span>M.Sc. Ag - Genetics &amp; Plant Breeding</span>
+            <span>Animal Husbandry &amp; Dairy</span>
+            <span>Soil Conservation</span>
+            <span>Agriculture Engineering</span>
+        </div>
+    </div>
+
+    <!-- Faculty of Medicine -->
+    <div class="faculty-block">
+        <h3>Faculty of Medicine</h3>
+        <div class="course-tags">
+            <span>B.Pharma</span>
+            <span>Department of Pharmaceutical Sciences</span>
+        </div>
+    </div>
+
+    <!-- Other Postgraduate / Professional Programmes -->
+    <div class="faculty-block">
+        <h3>Other Postgraduate &amp; Professional Programmes</h3>
+        <div class="course-tags">
+            <span>MBA</span>
+            <span>MCA</span>
+            <span>MHRD</span>
+        </div>
+    </div>
+
+</div>
+
+    <script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/counterup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
